@@ -71,7 +71,7 @@ body {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 
-  overflow-x: hidden;
+  overflow: hidden;
   margin: 0;
   display: flex;
   flex-direction: column;
