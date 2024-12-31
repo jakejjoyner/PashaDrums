@@ -12,4 +12,4 @@
         <li><a href="/bio/" class="inter-regular" class="bio">Bio</a></li>
       </ul>
     </div>
-`;const n=new IntersectionObserver(s=>{let t=0;s.forEach(i=>{i.isIntersecting&&(setTimeout(()=>{i.target.classList.toggle("animation"),console.log("in view")},t),n.unobserve(i.target))})},{threshold:0});document.querySelectorAll("#fade-in").forEach(s=>{n.observe(s)});
+`;const a=new IntersectionObserver(s=>{let t=0;s.forEach(i=>{i.isIntersecting?(setTimeout(()=>{i.target.classList.toggle("animation"),console.log("in view")},t),t+=200):(i.target.classList.contains("animation")&&i.target.classList.toggle("animation"),console.log("out of view"))})},{threshold:.15});document.querySelectorAll("#fade-in").forEach(s=>{a.observe(s)});
