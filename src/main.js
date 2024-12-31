@@ -20,9 +20,11 @@ const icons = document.querySelector('#fade-in');
 const observer = new IntersectionObserver(entries => {
   if(entries[0].isIntersecting) {
     icons.classList.toggle( 'animation' );
+    console.log("in view");
   }
   else {
     icons.classList.toggle( 'animation' );
+    console.log("out of view");
   }
 }
 // {threshold: 5}
