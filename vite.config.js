@@ -12,5 +12,5 @@ export default defineConfig({
       },
     },
   },
-  base: '/PashaDrums/'
+  base: '/pasha-drums/'
 })
