@@ -18,6 +18,13 @@ document.querySelector('#header').innerHTML = `
 
 const icons = document.querySelector('#fade-in');
 const observer = new IntersectionObserver(entries => {
-  icons.classList.toggle( 'animation', entries[0].isIntersecting );
-});
+  if(entries[0].isIntersecting) {
+    icons.classList.toggle( 'animation' );
+  }
+  else {
+    icons.classList.toggle( 'animation' );
+  }
+}
+// {threshold: 5}
+);
 observer.observe(icons);
