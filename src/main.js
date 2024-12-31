@@ -24,10 +24,18 @@ const observer = new IntersectionObserver(entries => {
       entry.target.classList.toggle( 'animation' );
       console.log("in view");
       }, delay);
-      observer.unobserve(entry.target);
+      delay += 200;
+      // observer.unobserve(entry.target);
+    }
+    else {
+      if(entry.target.classList.contains('animation')) {
+        entry.target.classList.toggle( 'animation' );
+      }
+      console.log("out of view");
+      // observer.unobserve(entry.target);
     }
   });
-}, { threshold: 0.00 });
+}, { threshold: 0.15 });
 // observe the elements to be animated
 const icons = document.querySelectorAll('#fade-in').forEach(el => {
   observer.observe(el);

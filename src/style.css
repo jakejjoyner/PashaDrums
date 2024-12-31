@@ -147,6 +147,10 @@ li {
     100% { opacity: 1; }
 }
 
+#social-media-text-container {
+  height: 50px;
+}
+
 .animation {
   animation: play 2.8s;
   animation-iteration-count: 1;
@@ -185,7 +189,7 @@ li {
 
 .copyright-message {
   font-size: 10px;
-  margin-top: 652px;
+  margin-top: 602px;
   font-family: "AR One Sans", serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -483,6 +487,10 @@ li {
     margin: 0;
     font-size: 14px;
   }
+
+  .copyright-message {
+    margin-top: -40px;
+  }
 }
 
 @media only screen and (min-width: 441px) and (max-width: 586px) {
@@ -543,6 +551,10 @@ li {
     padding: 0;
     margin: 0;
     font-size: 14px;
+  }
+
+  .copyright-message {
+    margin-top: 697px;
   }
 }
 
@@ -628,5 +640,13 @@ li {
   .social-media-text {
     margin-top: 50px;
     font-size: 14px;
+  }
+
+  #social-media-text-container {
+    height: 30px;
+  }
+
+  .copyright-message {
+    margin-top: 656px;
   }
 }
