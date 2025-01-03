@@ -78,14 +78,17 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: rgba(0,0,0,0.5);
+  scrollbar-gutter: auto;
 }
 
-/* html {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+html, body {
+    overflow-x: hidden;
 }
-html::-webkit-scrollbar {
-  display: none;
+
+/* 
+::-webkit-scrollbar {
+  background-color: #ffffff;
+  border-radius: 10px;
 } */
 
 #header {
@@ -411,6 +414,10 @@ li {
     width: 70vw;
   }
   /**/
+
+  ::-webkit-scrollbar {
+  -webkit-appearance: none;
+  }
 
   /* Events */
   .first-image {
